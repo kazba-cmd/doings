@@ -1,0 +1,350 @@
+body
+{
+    font-family: "M PLUS 1p", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16.2px;
+    line-height: 26px;
+    color: #30233D;
+}
+.container
+{
+    max-width: 1146px;
+    margin: 0 auto;
+    padding: 0;
+}
+.what-we-do
+{
+    padding: 50px 0;
+}
+.what-we-do-caption
+{
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #F61067;
+}
+.what-we-do-text
+{
+    max-width: 754px;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    color: #30233D;
+}
+.list
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    counter-reset: list-counter;
+}
+.list-item
+{
+    padding: 0 30px 30px;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    border: 1px solid rgb(246, 16, 103);
+    cursor: pointer;
+    user-select: none;
+    margin-right: 30px;
+    flex-grow: 1;
+}
+.list-item::before
+{
+    content: "";
+    background: url(../design/icon-atom.svg) center no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid rgb(246, 16, 103);
+    box-shadow: inset 1px 1px 1px 50px rgba(246, 16, 103, 0.02);
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 30px;
+}
+.list-item:hover::before
+{
+    background-color: #fcfcfc;
+
+}
+.white
+{
+    color: #fcfcfc;
+}
+.bg-light-violet
+{
+    background-color: #5E239D;
+    padding: 50px 0;
+}
+.bg-pink:hover
+{
+    background: #F61067;
+    color: #fcfcfc;
+}
+.list-item-light-violet
+{
+    padding: 0 30px 30px;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    user-select: none;
+    margin-right: 30px;
+    flex-grow: 1;
+}
+.list-item-light-violet::before
+{
+    content: "";
+    background: url(../design/big-icon-atom.svg) center no-repeat;
+    width: 54px;
+    height: 61px;
+    display: inline-block;
+    box-shadow: inset 1px 1px 1px 50px rgba(246, 16, 103, 0.02);
+    margin-top: 30px;
+}
+.bg-dark-violet
+{
+    background-color: #30124E;
+    padding: 50px 0;
+}
+.list-item-dark-violet
+{
+    padding: 0 30px 30px;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    counter-increment: list-counter;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 30px;
+    flex-grow: 1;
+}
+.list-item-dark-violet::before
+{
+    content: "0" counter(list-counter);
+    display: inline-block;
+    color: #F61067;
+    margin-top: 30px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+.list-item-dark-violet:hover::before
+{
+    color: #fcfcfc;
+}
+.bg-very-dark-violet
+{
+    background: #150433;
+}
+.footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.footer-menu-services
+{
+    display: flex;
+    list-style: none;
+}
+.footer-menu
+{
+    flex-basis: 50%;
+}
+.footer-services
+{
+    flex-basis: 50%;
+}
+.list-style
+{
+    padding: 0;
+    list-style: none;
+}
+.footer-flex
+{
+    flex-basis: 25%;
+    margin-top: 50px;
+    flex-grow: 1;
+}
+.lopper
+{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 43px;
+    letter-spacing: 2px;
+    color: inherit;
+}
+.lopper-text
+{
+    max-width: 166px;
+}
+.footer-caption
+{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: inherit;
+    margin: 0;
+    display: inline-block;
+    border-bottom: 1px solid #F61067;
+}
+.links
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12.6px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: inherit;
+}
+.links:hover
+{
+    background: #F61067;
+}
+.footer-contacts-pos
+{
+    margin-left: 50px;
+}
+.footer-caption
+{
+    margin-bottom: 16.2px;
+}
+.contacts
+{
+    display: flex;
+    flex-direction: column;
+}
+.contacts-link
+{
+    text-decoration: none;
+    color: inherit;
+}
+.contacts-link:hover
+{
+    background: #F61067;
+}
+.contacts-mail::before
+{
+    content: "";
+    background: url(../design/icon-mail.svg) center no-repeat;
+    width: 12px;
+    height: 9px;
+    margin-right: 15px;
+    display: inline-block;
+}
+.contacts-phone::before
+{
+    content: "";
+    background: url(../design/icon-phone.svg) center no-repeat;
+    width: 9px;
+    height: 15px;
+    margin-right: 15px;
+    display: inline-block;
+}
+.follow
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    margin-right: 20px;
+}
+.icons-size
+{
+    padding: 10px 20px;
+}
+.icons-size:hover
+{
+    box-shadow: inset 1px 1px 1px 30px rgba(246, 16, 103, 0.6);
+}
+.twitter
+{
+    background: url(../design/icon-twitter.svg) center no-repeat;
+}
+.facebook
+{
+    background: url(../design/icon-facebook.svg) center no-repeat;
+}
+.instagram
+{
+    background: url(../design/icon-instagram.svg) center no-repeat;
+}
+.youtube
+{
+    background: url(../design/icon-youtube.svg) center no-repeat;
+}
+.mama
+{
+    background: url(../design/icon-mama.svg) center no-repeat;
+}
+.footnote
+{
+    padding: 50px 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 11.7px;
+    line-height: 19px;
+    color: #FCFCFC;
+}
+@media screen and (max-width: 900px)
+{
+    .container
+    {
+        margin: 0 30px;
+    }
+    .list-item
+    {
+        margin-right: 0;
+        flex-basis: 40%;
+    }
+    .list-item-light-violet
+    {
+        margin-right: 0;
+        flex-basis: 40%;
+    }
+    .list-item-dark-violet
+    {
+        margin-right: 0;
+        flex-basis: 40%;
+    }
+    .footer-flex
+    {
+        flex-basis: 35%;
+    }
+    .footer-follow
+    {
+        text-align: center;
+    }
+@media screen and (max-width: 600px)
+{
+    .list-item
+    {
+        flex-basis: 60%;
+    }
+    .list-item-light-violet
+    {
+        flex-basis: 60%;
+    }
+    .list-item-dark-violet
+    {
+        flex-basis: 60%;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .footer-flex
+    {
+        flex-basis: 60%;
+    }
+}
